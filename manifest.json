@@ -1,11 +1,11 @@
 {
-    "name": "Nahg Al-Tanfeez Business Services",
-    "short_name": "Nahg",
-    "description": "Strategic Transformation Partner for Non-Profit Organizations in Saudi Arabia",
+    "name": "Nimora Studio | نيمورا ستوديو",
+    "short_name": "Nimora",
+    "description": "The leading digital platform for ceramics and construction in Saudi Arabia. نيمورا ستوديو: منصتك الرقمية لقطاع السيراميك ومواد البناء.",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#F2F4F5",
-    "theme_color": "#002D2D",
+    "background_color": "#efede8",
+    "theme_color": "#7b6b5c",
     "orientation": "portrait",
     "icons": [
         {
