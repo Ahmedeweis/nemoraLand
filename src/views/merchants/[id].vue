@@ -155,13 +155,13 @@
           </div>
 
           <!-- Bottom Actions -->
-          <div class="absolute bottom-0 left-0 right-0 p-6 flex items-center justify-between z-30 pointer-events-auto">
+          <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 flex items-center justify-between z-30 pointer-events-auto">
             <!-- Interested Button -->
             <button @click.stop
-              class="bg-white/95 backdrop-blur-md text-[#1a1a1a] px-4 py-2.5 rounded-full text-xs font-bold hover:bg-white transition-all flex items-center gap-1.5 group/btn shadow-lg">
+              class="bg-white/95 backdrop-blur-md text-[#1a1a1a] px-4 py-2.5 md:px-4 md:py-2.5 rounded-full text-[11px] md:text-xs font-bold hover:bg-white transition-all flex items-center gap-1.5 group/btn shadow-lg">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                class="group-hover/btn:scale-110 transition-transform">
+                class="hidden md:block group-hover/btn:scale-110 transition-transform">
                 <path
                   d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
                 </path>
@@ -178,11 +178,11 @@
 
             <div @click.stop>
               <NuxtLink :to="`/products/${index + 1}`" style="background-color: white;"
-                class="bg-white text-[#E66B1A] px-4 py-2.5 rounded-full text-xs font-bold  transition-all flex items-center gap-1.5 group/btn2 shadow-lg">
+                class="bg-white text-[#E66B1A] px-4 py-2.5 md:px-4 md:py-2.5 rounded-full text-[11px] md:text-xs font-bold  transition-all flex items-center gap-1.5 group/btn2 shadow-lg">
                 More Details
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                  class="group-hover/btn2:translate-x-1 transition-transform">
+                  class="hidden md:block group-hover/btn2:translate-x-1 transition-transform">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -257,11 +257,11 @@
             <!-- Right Actions -->
             <div class="flex items-center gap-3" @click.stop>
               <NuxtLink :to="`/products/${index + 1}`" style="background-color: white; color: #E66B1A;"
-                class=" px-5 py-2.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 group/btn2 shadow-lg hover:shadow-xl hover:scale-105">
+                class="px-4 py-2.5 md:px-5 md:py-2.5 rounded-full text-[11px] md:text-xs font-bold transition-all flex items-center gap-1.5 group/btn2 shadow-lg hover:shadow-xl hover:scale-105">
                 More Details
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                  class="group-hover/btn2:translate-x-1 transition-transform">
+                  class="hidden md:block group-hover/btn2:translate-x-1 transition-transform">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
