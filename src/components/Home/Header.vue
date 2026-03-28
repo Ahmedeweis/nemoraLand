@@ -1,7 +1,7 @@
 <template>
-  <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+  <header class="fixed top-6 left-0 right-0 z-50 flex flex-col items-center px-4">
     <div
-      class="w-full max-w-7xl bg-[#efede8]/95 backdrop-blur-sm border border-gray-200/50 rounded-2xl px-8 py-4 flex items-center justify-between shadow-lg transition-all duration-300 animate-fade-in-down-no-translate">
+      class="w-full max-w-7xl bg-[#efede8]/95 backdrop-blur-sm border border-gray-200/50 rounded-2xl px-4 sm:px-8 py-4 flex items-center justify-between shadow-lg transition-all duration-300 animate-fade-in-down-no-translate">
 
 
       <!-- Logo Section -->
@@ -10,7 +10,7 @@
           class="w-10 h-10 bg-[#1a1a1a] rounded-[14px] flex items-center justify-center group-hover:rotate-6 transition-transform">
           <span class="text-white font-bold text-xl">N</span>
         </div>
-        <span class="text-[#1a1a1a] font-bold text-xl tracking-tight">Nimora Studio</span>
+        <span class="text-[#1a1a1a] font-bold text-lg sm:text-xl tracking-tight">Nimora Studio</span>
       </NuxtLink>
 
       <!-- Desktop Navigation & Actions -->
@@ -53,7 +53,7 @@
         <div class="flex items-center gap-4">
           <button
             @click="showAuthModal = true"
-            class="bg-[#7b6b5c] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#68594b] transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10">
+            class="bg-[#7b6b5c] text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-xl font-bold hover:bg-[#68594b] transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10">
             Login
           </button>
           <div
@@ -89,11 +89,11 @@
       enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-200 ease-in"
       leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-[-20px]">
       <div v-if="isOpen"
-        class="mt-4 lg:hidden bg-white border border-gray-100 rounded-[2rem] p-8 shadow-[0_20px_50px_rgba(0,0,0,0.12)] overflow-hidden">
+        class="mt-4 w-full max-w-7xl lg:hidden bg-white/95 backdrop-blur-md border border-gray-100 rounded-[2rem] p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.12)] overflow-hidden">
         <div class="flex flex-col gap-8">
           <nav class="flex flex-col gap-6">
             <NuxtLink to="/merchants" @click="isOpen = false"
-              class="text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
+              class="text-xl sm:text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
               Merchant
               <span
                 class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-[#1a1a1a] group-hover:text-white transition-colors">
@@ -105,7 +105,7 @@
               </span>
             </NuxtLink>
             <NuxtLink to="/interest-list" @click="isOpen = false"
-              class="text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
+              class="text-xl sm:text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
               Interest
               <span
                 class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-[#1a1a1a] group-hover:text-white transition-colors">
@@ -117,7 +117,7 @@
               </span>
             </NuxtLink>
             <NuxtLink to="/about" @click="isOpen = false"
-              class="text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
+              class="text-xl sm:text-2xl font-bold text-[#1a1a1a] flex items-center justify-between group">
               About
               <span
                 class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-[#1a1a1a] group-hover:text-white transition-colors">

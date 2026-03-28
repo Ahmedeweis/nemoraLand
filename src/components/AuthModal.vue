@@ -25,16 +25,18 @@
 
           <!-- Right Side: Content -->
           <div :class="step === 'success' ? 'w-full' : 'w-full md:w-1/2'"
-            class="p-12 md:p-16 flex flex-col justify-center">
+            class="p-6 sm:p-12 md:p-16 flex flex-col justify-center">
 
             <!-- Step 1: Login -->
             <div v-if="step === 'login'" class="animate-fade-in">
-              <h2 class="text-4xl font-bold font-dm-sans text-[#7b6b5c] mb-3 text-center md:text-left">Welcome To Nimora
+              <h2 class="text-2xl sm:text-4xl font-bold font-dm-sans text-[#7b6b5c] mb-3 text-center md:text-left">
+                Welcome To Nimora
                 !</h2>
-              <p class="text-[#7C7977] text-lg mb-12 text-center md:text-left">We’ll send you a verification code.</p>
+              <p class="text-[#7C7977] text-base sm:text-lg mb-6 sm:mb-12 text-center md:text-left">We’ll send you a
+                verification code.</p>
 
               <div class="space-y-8">
-                <div>
+                <div style="margin-bottom: 10px;">
                   <label class="block text-sm font-bold text-[#1a1a1a] mb-3 uppercase tracking-wide">Email</label>
                   <div class="relative">
                     <input type="email" placeholder="Enter your email"
@@ -49,7 +51,7 @@
                   </div>
                 </div>
 
-                <div class="py-2">
+                <div class="py-2" style="margin-bottom: 10px;">
                   <span class="text-sm font-bold text-[#7b6b5c] uppercase tracking-widest">OR</span>
                 </div>
 
@@ -84,8 +86,9 @@
 
             <!-- Step 2: Verify -->
             <div v-if="step === 'verify'" class="animate-fade-in text-center md:text-left">
-              <h2 class="text-4xl font-bold text-[#7b6b5c] mb-3 font-dm-sans">Enter Verification code</h2>
-              <div class="flex items-center justify-center md:justify-start gap-2 text-[#7C7977] text-lg mb-12">
+              <h2 class="text-2xl sm:text-4xl font-bold text-[#7b6b5c] mb-3 font-dm-sans">Enter Verification code</h2>
+              <div
+                class="flex flex-wrap items-center justify-center md:justify-start gap-2 text-[#7C7977] text-base sm:text-lg mb-6 sm:mb-12">
                 <span>Sent code to +966151318 148</span>
                 <button @click="step = 'login'" class="text-[#E66B1A] font-bold hover:underline">Change</button>
               </div>
@@ -94,9 +97,9 @@
                 <div>
                   <label class="block text-sm font-bold text-[#1a1a1a] mb-6 uppercase tracking-wide">Enter the 5-digit
                     code</label>
-                  <div class="flex justify-center md:justify-start gap-4">
+                  <div class="flex justify-center md:justify-start gap-3 sm:gap-4">
                     <input v-for="i in 5" :key="i" type="text" maxlength="1"
-                      class="w-14 h-14 sm:w-16 sm:h-16 bg-white border border-gray-200 rounded-xl text-center text-2xl font-bold text-[#1a1a1a] focus:outline-none focus:ring-4 focus:ring-[#7b6b5c]/5 focus:border-[#7b6b5c] transition-all shadow-sm" />
+                      class="w-11 h-11 sm:w-16 sm:h-16 bg-white border border-gray-200 rounded-xl text-center text-xl sm:text-2xl font-bold text-[#1a1a1a] focus:outline-none focus:ring-4 focus:ring-[#7b6b5c]/5 focus:border-[#7b6b5c] transition-all shadow-sm" />
                   </div>
                   <p class="mt-6 text-[#7C7977]">Didn’t receive it? <button
                       class="text-[#E66B1A] font-bold hover:underline">Resend</button></p>
@@ -118,8 +121,9 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h2 class="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">Verification Successful</h2>
-              <p class="text-[#736558] text-lg mb-12">Your code has been verified. You are now logged in.</p>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">Verification Successful</h2>
+              <p class="text-[#736558] text-base sm:text-lg mb-8 sm:mb-12">Your code has been verified. You are now
+                logged in.</p>
 
               <button @click="close"
                 class="w-full bg-[#7b6b5c] text-white py-5 rounded-2xl font-bold text-xl hover:bg-[#68594b] transition-all">

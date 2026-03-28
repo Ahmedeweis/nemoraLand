@@ -36,9 +36,8 @@
           </div> <!-- Merchant Logo -->
           <div
             class="absolute top-[13.5rem] left-6 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center p-2 border border-gray-50 z-10 transition-transform duration-300 group-hover:scale-110">
-            <img src="../../assets/imgs/icons/store.svg" alt="" />
-            <div
-              class="w-full h-full bg-[#f5f4f0] flex items-center justify-center text-[#ff8a00] font-bold text-2xl rounded-lg">
+
+            <div class="w-full h-full  flex items-center justify-center text-[#ff8a00] font-bold text-2xl rounded-lg">
               {{ merchant.logoLetter }}
             </div>
           </div> <!-- Content -->

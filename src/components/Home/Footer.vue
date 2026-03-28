@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Global CTA Section (repeating before footer) -->
-    <section class="py-24 bg-transparent px-6">
+    <section class="py-12 sm:py-24 bg-transparent px-4 sm:px-6">
       <div
-        class="max-w-7xl mx-auto relative rounded-[3rem] overflow-hidden h-[500px] flex items-center justify-center text-center animate-fade-in-up">
+        class="max-w-7xl mx-auto relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden min-h-[400px] md:h-[500px] py-16 md:py-0 flex items-center justify-center text-center animate-fade-in-up">
         <!-- Background Image -->
         <div class="absolute inset-0">
           <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000"
@@ -13,18 +13,18 @@
 
         <!-- Content -->
         <div class="relative z-10 px-8">
-          <h2 class="text-[48px] font-bold text-white mb-8 tracking-normal leading-[100%] align-middle text-center"
+          <h2 class="text-3xl sm:text-4xl md:text-[48px] font-bold text-white mb-6 sm:mb-8 tracking-normal leading-[1.2] md:leading-[100%] align-middle text-center"
             style="font-family: 'DM Sans', sans-serif;">
             Ready to Transform Your Sourcing?
           </h2>
-          <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
+          <p class="text-white/80 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
             Join thousands of professionals using Nimora to discover, compare, and order premium ceramic and sanitary
             ware.
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button
-              class="bg-white border text-black px-12 py-4 rounded-xl text-lg  transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
+              class="w-full sm:w-auto bg-white border text-black px-8 sm:px-12 py-3.5 sm:py-4 rounded-xl text-base sm:text-lg transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3">
               Register
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -33,7 +33,7 @@
               </svg>
             </button>
             <button @click="navigateToMerchants"
-              class="bg-white/60 border  text-black px-12 py-4 rounded-xl text-lg hover:bg-white/50 transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
+              class="w-full sm:w-auto bg-white/60 border text-black px-8 sm:px-12 py-3.5 sm:py-4 rounded-xl text-base sm:text-lg hover:bg-white/50 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-3">
               Explore Merchant
             </button>
           </div>
