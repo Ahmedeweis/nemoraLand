@@ -12,7 +12,7 @@
       <!-- Hero Content -->
       <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-white/70 text-sm mb-10 animate-fade-in-up">
+        <nav class="hidden md:flex items-center gap-2 text-white/70 text-sm mb-10 animate-fade-in-up">
           <NuxtLink to="/merchants" class="hover:text-white transition-colors flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,7 +31,7 @@
           style="animation-delay: 0.1s">
           <!-- Logo -->
           <div
-            class="w-36 h-36 bg-white rounded-3xl shadow-2xl flex items-center justify-center p-5 border border-white/20">
+            class="hidden md:flex w-36 h-36 bg-white rounded-3xl shadow-2xl items-center justify-center p-5 border border-white/20">
             <div
               class="w-full h-full bg-white flex items-center justify-center text-[#ff8a00] font-bold text-5xl rounded-xl">
               {{ merchant.logoLetter }}
@@ -97,7 +97,7 @@
 
           <div class="h-8 w-px bg-gray-200 hidden sm:block"></div>
 
-          <div class="flex gap-2.5 overflow-x-auto pb-2 sm:pb-0 scroll-hide shrink-0">
+          <div class="flex flex-wrap gap-2.5">
             <button v-for="cat in productCategories" :key="cat"
               :class="cat === 'All Products' ? 'bg-[#3f3934] text-white border-[#3f3934]' : 'text-[#736558] border-gray-200 bg-white hover:border-[#1a1a1a] hover:text-[#1a1a1a]'"
               class="px-5 py-2 rounded-xl border text-[13px] font-bold transition-all shadow-sm whitespace-nowrap">
@@ -433,5 +433,13 @@ const products = [
     opacity: 1;
     transform: translateY(0);
   }
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 </style>
