@@ -20,7 +20,7 @@
       </div>
 
       <!-- Values & Collage Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center ">
         <!-- Values (Left) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 animate-fade-in-up" style="animation-delay: 0.1s">
           <div v-for="(value, idx) in values" :key="idx" class="space-y-1">
@@ -57,7 +57,7 @@
     </section>
 
     <!-- Why Nimora Section -->
-    <section class="bg-[#f5f3f0] py-32 overflow-hidden">
+    <section class="bg-[#f5f3f0] py-16 overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 md:px-12">
         <div class="text-center mb-16 animate-fade-in-up">
           <h2 class="text-3xl md:text-5xl font-bold text-[#1a1a1a] mb-5 tracking-tight">Why Nimora</h2>
@@ -67,7 +67,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-up" style="animation-delay: 0.1s">
           <!-- Feature 1: AI-Powered Visuals -->
-          <div class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
             <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6">
               <img src="../assets/imgs/icons/eyes.svg" class="w-6 h-6" alt="AI-Powered Visuals" />
             </div>
@@ -78,7 +79,8 @@
           </div>
 
           <!-- Feature 2: Verified Suppliers -->
-          <div class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
             <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6">
               <img src="../assets/imgs/icons/shield.svg" class="w-6 h-6" alt="Verified Suppliers" />
             </div>
@@ -89,7 +91,8 @@
           </div>
 
           <!-- Feature 3: B2B Pricing Control -->
-          <div class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="bg-white p-10 rounded-[2rem] border-transparent shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
             <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6">
               <img src="../assets/imgs/icons/analysis.svg" class="w-6 h-6" alt="B2B Pricing Control" />
             </div>
