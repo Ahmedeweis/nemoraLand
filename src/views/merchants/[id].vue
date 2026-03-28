@@ -298,13 +298,13 @@
       </div>
 
       <!-- Pagination -->
-      <div class="flex flex-col md:flex-row items-center justify-between gap-10 border-t border-gray-100 pt-16">
-        <span class="text-[#736558] text-sm font-medium">Showing 5 of 1060 products</span>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 border-t border-gray-100 pt-8 md:pt-16">
+        <span class="text-[#736558] text-xs md:text-sm font-medium">Showing 5 of 1060 products</span>
         <div class="flex items-center gap-2">
 
           <!-- First -->
           <button
-            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="11 17 6 12 11 7"></polyline>
@@ -314,7 +314,7 @@
 
           <!-- Prev -->
           <button
-            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="15 18 9 12 15 6"></polyline>
@@ -322,20 +322,20 @@
           </button>
 
           <!-- Numbers -->
-          <button class="w-10 h-10 rounded-full bg-[#E66B1A] text-white font-medium text-sm shadow-md">1</button>
+          <button class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#E66B1A] text-white font-medium text-xs md:text-sm shadow-md">1</button>
           <button
-            class="w-10 h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">2</button>
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-xs md:text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">2</button>
           <button
-            class="w-10 h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">3</button>
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-xs md:text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">3</button>
 
           <span class="text-[#736558] mx-1 font-medium tracking-widest text-sm">...</span>
 
           <button
-            class="w-10 h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">10</button>
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border border-gray-200 text-[#736558] font-medium text-xs md:text-sm hover:bg-gray-50 hover:text-[#1a1a1a] transition-all hover:shadow-sm">10</button>
 
           <!-- Next -->
           <button
-            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
@@ -344,7 +344,7 @@
 
           <!-- Last -->
           <button
-            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#736558] hover:border-[#1a1a1a] hover:text-[#1a1a1a] transition-all bg-white hover:shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="13 17 18 12 13 7"></polyline>
